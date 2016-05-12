@@ -1,0 +1,17 @@
+.admin_banner{width:30%; padding-right:3%; float:left; padding-bottom: 5%;}
+.remove.button-primary {
+    margin: 0 14%;
+}
+.outer {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.remove.button-primary.remove1 {
+    margin: 0;
+}
+#dashboard_activity{display:none;}
+#dashboard_right_now{display:none;}
+.welcome-panel-content{display:none;}
+
+

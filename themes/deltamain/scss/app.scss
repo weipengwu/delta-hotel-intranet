@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,700,400,600);
+@import 'settings';
+@import 'foundation';
+
+$page-background-color: #f4f4f4;
+$nav-font-size: 14px;
+$profile-nav-color: #004684;
+$global-nav-color: #1e1e1e;
+$main-nav-color: #ffffff;
+
+$full-page-width: 1184px;
+$left-column-width: 248px;
+$left-column-padding: 31px;
+$right-column-width: $left-column-width;
+$right-column-padding: $left-column-padding;
+$middle-column-width: $full-page-width - $left-column-width - $right-column-width;
+
+@import "header/header";
+@import "footer/footer";
+@import "body/body";
+
+
+body {
+  background: #0c3d68 url('../images/background.png') repeat-x;
+}
+
+.hide-text {
+  text-indent: -9999px;                 /* sends the text off-screen */
+  white-space: nowrap;
+  font-size: 0;
+  line-height: 0;
+}
+
+#page-wrapper {
+  min-height: 100%;
+  min-width: 1214px;
+  position: relative;
+}

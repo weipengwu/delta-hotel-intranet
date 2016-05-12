@@ -1,0 +1,69 @@
+#left-column {
+  width: $left-column-width;
+  padding: 0 $left-column-padding;
+  float: left;
+
+  .list-panel {
+    margin-bottom: 30px;
+
+    .header {
+      color: #004684;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: $font-weight-semi-bold;
+      padding: 0;
+      margin: 0 0 10px 0;
+      position: relative;
+    }
+    ul {
+      @extend .no-bullet;
+      li {
+        background: url('../images/icon-yellow-bullet.png') no-repeat 0 7px;
+        padding-left: 16px;
+        font-size: 13.5px;
+
+        a {
+          color: #1e1e1e;
+        }
+      }
+    }
+
+
+    &.top-activities {
+      .header {
+        a {
+          @extend .hide-text;
+          background: url('../images/icon-customize-blue.png') no-repeat 0 50%;
+          position: absolute;
+          top: 0;
+          right: 50px;
+          height: 100%;
+          width: 10px;
+        }
+      }
+    }
+
+  }
+
+
+  .messages {
+    background: #000000;
+    margin-bottom: 30px;
+    .orbit-timer, .orbit-next, .orbit-prev {
+      display: none;
+    }
+    nav {
+      text-align: right;
+      padding: 10px;
+
+      a {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: $font-weight-bold;
+        padding: 5px;
+      }
+    }
+  }
+
+}
+

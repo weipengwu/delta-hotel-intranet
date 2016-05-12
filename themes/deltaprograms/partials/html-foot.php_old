@@ -1,0 +1,156 @@
+    </div>
+</div>
+
+
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/foundation/js/foundation.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
+
+
+
+<script type="text/javascript">
+<!--
+jQuery.noConflict();
+
+//-->
+</script>
+<!--<script src="<?php echo theme_url; ?>/js/jquery.js"></script>-->
+<script src="<?php echo theme_url; ?>/js/jquery-ui.js"></script>
+<script src="<?php echo theme_url; ?>/js/jquery.cookie.js"></script>
+<!--script type="text/javascript">
+    jQuery(document).ready( function() {
+    	jQuery( ".tabs" ).tabs();
+    });jQuery.noConflict();
+  </script-->
+
+<script>
+jQuery(function() {
+ dialog = jQuery( "#dialog" ).dialog({
+		autoOpen: false,
+		height: 300,
+		width: 723,
+		top:288,
+		left:310,
+		modal: true,
+		buttons: {
+		
+		Cancel: function() {
+		  
+		    dialog.dialog( "close" );
+		},
+		Save: function(){
+		    var language_value = 'english';
+		 
+		    jQuery("input:radio[name=language]").each(function() {
+			if(jQuery( this ).prop( "checked" ) == true){
+			    language_value = jQuery(this).val();
+			    
+			}
+		    });
+		    jQuery.cookie("language_value", language_value);
+		
+		    dialog.dialog( "close" );
+		    
+		    
+		    if(language_value == 'english'){
+			window.location.href = "http://finance.deltaden.kpd-i.com/";
+			
+		    }else{
+			window.location.href = "http://finance.deltaden.kpd-i.com/?lang=fr";
+		    }
+		}
+		},
+		close: function() {
+		}
+	    });
+
+	jQuery( "#opener" ).click(function() {
+	    cookieValue = jQuery.cookie("language_value");
+	    jQuery("input:radio[name=language]").each(function() {
+		if(jQuery( this ).val() == cookieValue){
+		    jQuery(this).prop("checked",true);
+		}
+	    });
+	    jQuery( "#dialog" ).dialog( "open" );
+	});
+});
+</script>
+
+<script>
+      var pageCount = 2;
+jQuery('.load_more').click(function(){
+    //alert(pageCount);
+  jQuery('.animation_image').show();
+  jQuery('.load_more').hide();
+   
+    var maxNumberPage=jQuery('#maxNumberPage').val();
+  
+    jQuery.get("wp-content/themes/deltafinance/partials/body/loadMorePostsAjax.php?limit="+pageCount,function(data){
+
+				jQuery("#loadMore").show(); //bring back load more button
+				
+				jQuery("#results").append(data); //append data received from server
+				
+				//scroll page to button element
+				jQuery("html, body").animate({scrollTop: jQuery("#load_more_button").offset().top}, 500);
+				
+				//hide loading image
+				jQuery('.animation_image').hide(); //hide loading image once data is received		
+				jQuery('.load_more').show();
+				pageCount++; //user click increment on load button
+		
+					
+					
+					});
+    
+			if(pageCount >= maxNumberPage)
+			{
+			    
+			    //alert('no more');
+				//reached end of the page yet? disable load button
+				//jQuery(".load_more").attr("disabled", "disabled");
+				
+				//jQuery('.no_more').show(); //hide loading image once data is received
+				//jQuery('#load_more_button').hide();
+			setTimeout(function(){jQuery('.no_more').show();}, 1000);
+			setTimeout(function(){jQuery('#load_more_button').hide();}, 1000);
+							setTimeout(function(){jQuery('#load_more_button').hide();}, 4000);
+
+			}
+	});
+</script>
+
+<script>
+ jQuery(document).ready(function(){
+              jQuery(".inner ul li").bind("mouseover", function () {
+                var index = jQuery(this).attr("class");
+                /*alert(index);*/
+                jQuery(".discription" + index).show();
+            });
+           /* $(".mark").bind("mouseout", function () {
+                var index = $(this).attr("id").replace("mark", "");
+                $(".icontent" + index).hide();
+            });    */
+    });
+</script>
+<div id="dialog" class='dialog-language' title="Intranet Settings">
+     <form>
+    <fieldset>
+    <span class="title">Language</span>
+    
+    <input type="radio" name="language" checked value="english"  class="text ui-widget-content ui-corner-all">
+	<span>English</span>
+    
+    <input type="radio" name="language"  value="french" class="text ui-widget-content ui-corner-all">
+	<span>French</span>
+    </fieldset>
+    </form>
+    
+<!--<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>-->
+</div>
+
+
+
+</body>
+</html>

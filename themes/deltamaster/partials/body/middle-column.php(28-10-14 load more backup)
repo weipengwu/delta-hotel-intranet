@@ -1,0 +1,271 @@
+<?php
+
+/**
+ * Get excerpt from string
+ * 
+ * @param String $str String to get an excerpt from
+ * @param Integer $startPos Position int string to start excerpt from
+ * @param Integer $maxLength Maximum length the excerpt may be
+ * @return String excerpt
+ */
+function getExcerpttt($str, $startPos=0, $maxLength=100) {
+	if(strlen($str) > $maxLength) {
+		$excerpt   = substr($str, $startPos, $maxLength-3);
+		$lastSpace = strrpos($excerpt, ' ');
+		$excerpt   = substr($excerpt, 0, $lastSpace);
+		$excerpt  .= '...';
+	} else {
+		$excerpt = $str;
+	}
+	
+	return $excerpt;
+}
+if(is_front_page())
+{
+
+?>
+<section id="middle-column">
+    <section class="panel news main">
+        <h3 class="header">Delta News and Highlights</h3>
+        <!-- img src="<?php echo get_template_directory_uri(); ?>/images/panel-news-image.png" alt="" />
+        <div class="caption">
+            <span class="primary">New waterfront hotel joins the Delta family!</span>
+            <span class="secondary">The royal private residents club</span>
+        </div-->
+    </section>
+<!-- new code for header -->
+    <div class="slider slider-for">
+    <?php for($i=1; $i<=4; $i++){?>
+						<div>
+							<div class="iamge"><img src="<?php bloginfo('template_url')?>/images/fpo/home_slide_<?php echo $i;?>.jpg" alt="" width="689" height="388" /></div>
+							<?php if($i==1){?>
+							<div class="caption">
+								<span class="primary">New waterfront hotel joins the Delta family!</span> <span class="secondary">The royal private residents club</span>
+							</div>
+							<?php } elseif ($i==2){?>
+							<div class="caption">
+								<span class="primary">This is Slide #2</span> <span class="secondary">The royal private residents club</span>
+							</div>
+							<?php }elseif ($i==3){?>
+							<div class="caption">
+								<span class="primary">This is Slide #3</span> <span class="secondary">The royal private residents club</span>
+							</div>
+							<?php } else {?>
+							<div class="caption">
+								<span class="primary">This is Slide #4</span> <span class="secondary">The royal private residents club</span>
+							</div>
+							<?php }?>
+						</div>
+						<?php } ?>
+					</div>
+				
+                    <div class="slider slider-nav ">
+                     <?php for($i=1; $i<=4; $i++){?>
+                        <div class="item">
+                            <img src="<?php bloginfo('template_url')?>/images/fpo/home_slide_<?php echo $i;?>_thumb.jpg" alt="" width="174" height="99" />
+							<?php if($i==1){?>
+                            <h4>Special Offers</h4><a href="#">Learn more&gt;</a>
+                            <?php }elseif($i==2){ ?>
+                            <h4>Slide #2</h4><a href="#">Learn more&gt;</a>
+                            <?php }elseif ($i==3){?>
+                            <h4>Slide #3</h4><a href="#">Learn more&gt;</a>
+                            <?php } else {?>
+                            <h4>Slide #4</h4><a href="#">Learn more&gt;</a>
+                            <?php }?>
+                        </div>
+						<?php } ?>
+                        <!--div class="item">
+                            <img src="<?php bloginfo('template_url')?>/images/fpo/home_slide_2_thumb.jpg" alt="" width="174" height="99" />
+
+                            <h4>Slide #2</h4><a href="#">Learn more&gt;</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="<?php bloginfo('template_url')?>/images/fpo/home_slide_3_thumb.jpg" alt="" width="174" height="99" />
+
+                            <h4>Slide #3</h4><a href="#">Learn more&gt;</a>
+                        </div>
+
+                        <div class="item">
+                            <img src="<?php bloginfo('template_url')?>/images/fpo/home_slide_4_thumb.jpg" alt="" width="174" height="99" />
+
+                            <h4>Slide #4</h4><a href="#">Learn more&gt;</a>
+                        </div-->
+                    </div>
+			<?php 
+			$blog_id = get_current_blog_id();// get current blog 
+				
+				$table= $wpdb->blogs;
+				$sql= "select blog_id from ".$table ." where public='1' ORDER BY blog_id DESC LIMIT 0 ,100" ;//}
+				$blog_query= $wpdb->get_results($sql);
+				$bids=array();
+				foreach($blog_query as $blog){					
+				$bids[]= $blog->blog_id;
+				}
+				
+			?>
+    <section class="panel headlines">
+        <h3 class="header">Delta Headlines<small class="customize">Customize</small></h3>
+        <div class="body feeds clearfix">
+			<?php
+				    
+				
+				
+				
+				foreach($bids as $bid):
+				switch_to_blog($bid); //switched to blog with blog_id $bid
+				query_posts('posts_per_page=1&paged=1');
+				
+				?>
+				<?php if ( have_posts() ) : ?>
+
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<div class="feed row">
+                <div class="columns large-3">
+                    <a href="<?php the_permalink(); ?>"><?php if($thumbnail=='' || $thumbnail==null) { ?>
+		    <img src="<?php echo get_template_directory_uri(); ?>/images/panel-headlines-image2.png" />
+		    <?php } else { ?><img src="<?php the_post_thumbnail(); ?>"/> <?php } ?></a>
+                </div>
+                <div class="columns large-6">
+                    <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+                    <p><?php the_excerpt(); ?></p>
+                    <small>Posted <?php the_date(); ?> by <?php the_author(); ?> in <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></small>
+                </div>
+                <div class="columns large-3">
+                    <a class="comments"  href="<?php the_permalink(); ?>#comments"><?php echo $commentcount = comments_number('0', '1', '%'); ?></a>
+                    <?php echo getPostLikeLink( get_the_ID() ); ?>
+                </div>
+            </div>
+			
+			
+			
+			
+			<?php	
+				endwhile;
+				endif;
+				endforeach ; 
+				switch_to_blog( $bid );
+				?>
+				
+				
+            <?php $args = array(
+					'category'            => 'delta, deltafinance',
+					'display_type'     => 'ulist',
+					'thumbnail'        => TRUE,
+					'auto_excerpt'     => TRUE,
+				); 
+           //print_r (network_latest_posts($args));
+           /*$args = array(
+            // Change these category SLUGS to suit your use.
+            'category_name' => 'delta', 
+            'paged' => $paged
+        );*/
+
+        //$list_of_posts = new WP_Query( $args );
+        ?>
+        <?php //if ( $list_of_posts->have_posts() ) : ?>
+			<?php /* The loop */ ?>
+			<?php //while ( $list_of_posts->have_posts() ) : $list_of_posts->the_post(); ?>
+				<?php // Display content of posts ?>
+				<?php 
+				//print('<pre>');
+				//print_r(wp_get_current_user());
+				//print('</pre>');
+				/*foreach($list_of_posts->posts as $item)
+				{
+				//print_r($item)
+				$permlink = get_permalink( $item->ID);
+					?>
+					<div class="feed row">
+                <div class="columns large-3">
+                    <a href="<?php print $permlink; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/panel-headlines-image2.png" /></a>
+                </div>
+                <div class="columns large-6">
+                    <a href="<?php print $permlink; ?>"><h4><?php print $item->post_title; ?></h4></a>
+                    <p><?php print substr($item->post_content,0,150); ?></p>
+                    <small>Posted Jul 28, 2014, 5:45 AM by Andy Serwatuk in Information Technology</small>
+                </div>
+                <div class="columns large-3">
+                    <a class="comments">12</a>
+                    <a class="likes">2</a>
+                </div>
+            </div>
+					<?php
+				} */
+				//print('</pre>');
+				?>
+			<?php //endwhile; ?>
+
+			<?php //twentythirteen_paging_nav(); ?>
+
+		<?php //else : ?>
+			<?php //get_template_part( 'content', 'none' ); ?>
+		<?php //endif; ?>
+            	
+         
+            
+            
+			<!--
+            <div class="feed row">
+                <div class="columns large-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/panel-headlines-image1.png" />
+                </div>
+                <div class="columns large-6">
+                    <h4>Delta named hotelier at Calgary Airport!</h4>
+                    <p>It’s official! The Calgary International Airport is the new location for the latest addition to the Delta family. A new 318- room property is currently under construction to serve...</p>
+                    <small>Posted Jul 25, 2014, 2:42 AM by Nancy Strickland in Marketing</small>
+                </div>
+                <div class="columns large-3">
+                    <a class="comments">8</a>
+                    <a class="likes">3</a>
+                </div>
+            </div>
+
+            <div class="feed row">
+                <div class="columns large-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/panel-headlines-image3.png" />
+                </div>
+                <div class="columns large-6">
+                    <h4>Delta named hotelier at Calgary Airport!</h4>
+                    <p>It’s official! The Calgary International Airport is the new location for the latest addition to the Delta family. A new 318- room property is currently under construction to serve...</p>
+                    <small>Posted Jul 25, 2014, 2:42 AM by Nancy Strickland in Marketing</small>
+                </div>
+                <div class="columns large-3">
+                    <a class="comments">89</a>
+                    <a class="likes">76</a>
+                </div>
+            </div>
+			-->
+			<div id="results"></div>
+        </div>
+	 <?php  $pages = $wp_query->max_num_pages; ?>
+	 
+	 <input type="hidden" value="<?php echo $pages; ?>" id="maxNumberPage">
+	 
+	 <div class="no_more more" id="no_more_button" style="display:none;">No more headlines</div>
+	 
+        <a class="load_more more" id="load_more_button" href="javascript:void(0);">Load more headlines</a>
+	<div class="animation_image more" style="display:none;"><img src="wp-content/themes/deltamain/images/ajax-loader.gif" style="vertical-align: middle;"> Loading...</div>
+    </section>
+</section>
+
+<?php 
+}
+else
+{
+?>
+<section id="middle-column">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<h1><?php print_r(the_title()); ?></h1>
+
+<?php print_r(the_content()); ?>
+
+<?php endwhile ?>
+<?php endif ?>
+</section>
+<?php
+}
+?>
+

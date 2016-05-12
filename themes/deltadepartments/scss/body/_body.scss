@@ -1,0 +1,61 @@
+#page-body {
+  @extend .clearfix;
+  background: $page-background-color;
+  min-height: 200px;
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 50px;
+
+
+  .panel {
+    border: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+
+    .header {
+      background: #336b9d;
+      min-height: 40px;
+      display: block;
+      font-size: 16.5px;
+      font-weight: $font-weight-semi-bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 40px;
+      padding: 0 18px;
+      margin: 0;
+      position: relative;
+
+      small {
+        position: absolute;
+        right: 18px;
+        top:0;
+        margin: 0;
+        padding: 0;
+        display: block;
+        color: #fff;
+        text-transform: none;
+        font-size: 12px;
+        font-weight: $font-weight-normal;
+        height: 40px;
+        line-height: 40px;
+
+        &.customize {
+          background: url('../images/icon-customize.png') no-repeat 100% 50%;
+          padding-right: 25px;
+        }
+      }
+    }
+
+    .body {
+      background: #ffffff;
+    }
+
+  }
+
+  @import "left_column";
+  @import "middle_column";
+  @import "right_column";
+
+}
+

@@ -1,0 +1,157 @@
+#page-header {
+  $padding-left: $left-column-width - $left-column-padding;
+
+  position: relative;
+  height: 100px;
+  padding-left: $padding-left;
+
+
+
+  #logo {
+    @extend .hide-text;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 297px;
+    height: 99px;
+    background: url('../images/logo.png') no-repeat 0 0;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  #profile-nav {
+    float: left;
+//    margin-left: $margin-left;
+    opacity: 0.9;
+
+    ul {
+      @extend .inline-list;
+      line-height: 51px;
+      font-size: $nav-font-size;
+      margin-bottom: 0;
+      a {
+        color: $profile-nav-color;
+      }
+    }
+
+    .profile {
+      background: url('../images/profile.png') no-repeat 0 50%;
+      padding-left: 40px;
+      span {
+        font-weight: $font-weight-semi-bold;
+        background: url('../images/icon-arrow-down.png') no-repeat 100% 50%;
+        padding-right: 15px;
+      }
+    }
+  }
+
+
+
+  #global-nav {
+    float: right;
+    opacity: 0.9;
+    ul {
+      @extend .inline-list;
+      line-height: 17px;
+      font-size: $nav-font-size;
+      margin-top:17px;
+      margin-bottom: 17px;
+      color: #1e1e1e;
+      li:not(:first-child) {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid $global-nav-color;
+
+        &.help a {
+          background: url('../images/icon-help.png') no-repeat 100% 50%;
+          padding-right: 20px;
+        }
+      }
+      a {
+        color: $global-nav-color;
+      }
+    }
+  }
+
+
+
+  #main-nav {
+    float: left;
+    clear: both;
+//    margin-left: $margin-left;
+    ul {
+      @extend .inline-list;
+      margin-top: 13px;
+      margin-bottom: 13px;
+      line-height: 23px;
+      font-size: $nav-font-size;
+      li:not(:first-child) {
+        margin-left: 20px;
+        &:last-child {
+          padding-left: 20px;
+          border-left: 1px solid $main-nav-color;
+        }
+      }
+    }
+    a {
+      color: $main-nav-color;
+      font-weight: $font-weight-semi-bold;
+      text-transform: uppercase;
+    }
+  }
+
+
+
+  #header-search {
+    $width: 250px;
+    $height: 29px;
+    $select-width: 60px;
+
+
+    float: right;
+    width: $width;
+
+    form {
+      margin-top: 10px;
+      display: block;
+      position: relative;
+    }
+
+    input, select, button {
+      height: $height;
+      margin: 0;
+      border: 0;
+      outline: 0;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding-right: $height;
+      padding-left: $select-width + 5px;
+    }
+
+    select {
+      background-color: #dadade;
+      line-height: $height;
+      padding: 0 4px;
+      width: $select-width;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: $font-weight-semi-bold;
+    }
+
+    button {
+      @extend .hide-text;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0;
+      background: url('../images/search.png') no-repeat 50% 50%;
+      width: $height;
+    }
+  }
+}

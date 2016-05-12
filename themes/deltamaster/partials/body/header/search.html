@@ -1,0 +1,24 @@
+<section id="header-search">
+    <form role="search" method="get" id="searchform" action="<?php bloginfo('url');?>/globalsearch/">
+	
+        <select>
+            <option>All</option>
+<?php
+$table= $wpdb->blogs;
+$sql= "select blog_id from ".$table ." where public='1'";//}
+//echo $sql;
+
+$blog_query= $wpdb->get_results($sql);
+$bids=array();
+foreach($blog_query as $blog){
+	 echo '<option  value="'.get_blog_option($blog->blog_id, 'siteurl').'">'.get_blog_option($blog->blog_id, 'blogname').'</option>';
+}
+
+?>
+        </select>
+        <div>
+        <input class="ms-global-search_vbox" type="text" tabindex="1" size="16" value="" name="mssearch" placeholder="<?php _e('search','deltamain');?>">
+        <button>Submit</button>
+    </div>        <button>Submit</button>
+    </form>
+</section>

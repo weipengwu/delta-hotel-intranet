@@ -1,0 +1,382 @@
+<nav id="main-nav">
+                    <ul class="clearfix">
+                        <li><a href="http://deltaden.kpd-i.com"><?php echo _e('Home','deltafinance');  ?></a></li>
+
+                        <li class="hasSub">
+                        	<a href="#"><?php echo _e('Apps','deltafinance');  ?></a>
+                        	
+                        	<div class="navMenu iconItem" id="navMenu_app">
+                        		<div class="inner">
+                        			<div class="column-2">
+		                        		<div class="col col-1">
+		                        			<a class="item" href="//www.gmail.com">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Google Mail</div>
+		                        					<div class="copy">Check out your Google Mail</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Google Calendar</div>
+		                        					<div class="copy">Check out your Google Calendar</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">MyExpense Report</div>
+		                        					<div class="copy">Check out your MyExpense Report</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Medallia</div>
+		                        					<div class="copy">Check out Medallia</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Delta Privilege</div>
+		                        					<div class="copy">Check out Delta Privilege</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Talent Nest Employee Portal</div>
+		                        					<div class="copy">Check out Talent Nest Employee Portal</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Talent Nest Management System</div>
+		                        					<div class="copy">Check out Talent Nest Management System</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Delta Celebrates</div>
+		                        					<div class="copy">Check out Delta Celebrates</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">MyDeltaHotels</div>
+		                        					<div class="copy">Check out MyDeltaHotels</div>
+		                        				</div>
+		                        			</a>
+		                        		</div>
+		                        		
+		                        		<div class="col col-2">
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Google Drive</div>
+		                        					<div class="copy">Check out Google Drive</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Google Groups</div>
+		                        					<div class="copy">Check out Google Groups</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Secure Billing</div>
+		                        					<div class="copy">Check out Secure Billing</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Delta STEP Program</div>
+		                        					<div class="copy">Check out Delta STEP Program</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Environment Management Portal</div>
+		                        					<div class="copy">Check out Environment Management Portal</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Destinations</div>
+		                        					<div class="copy">Check out Destinations</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Employee Discounts</div>
+		                        					<div class="copy">Check out Employee Discounts</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">LMS</div>
+		                        					<div class="copy">Check out LMS</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Support Ticket System</div>
+		                        					<div class="copy">Check out Support Ticket System</div>
+		                        				</div>
+		                        			</a>
+		                        		</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </li>
+
+                        <li class="hasSub">
+                        	<a href="#"><?php echo _e('Departments','deltafinance');  ?></a>
+                        	
+                        	<div class="navMenu iconItem" id="navMenu_departments">
+                        		<div class="inner">
+                        			<div class="column-2">
+		                        		<div class="col col-1">
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Executive Offices</div>
+		                        					<div class="copy">Check out your Google Mail</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Legal</div>
+		                        					<div class="copy">Check out your Google Calendar</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Development</div>
+		                        					<div class="copy">Check out your MyExpense Report</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="//marketing.deltaden.kpd-i.com">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Marketing</div>
+		                        					<div class="copy">Check out Medallia</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Office Services</div>
+		                        					<div class="copy">Check out Delta Privilege</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="//operations.deltaden.kpd-i.com">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Operations</div>
+		                        					<div class="copy">Check out Talent Nest Employee Portal</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Sales</div>
+		                        					<div class="copy">Check out Talent Nest Management System</div>
+		                        				</div>
+		                        			</a>
+		                        		</div>
+		                        		
+		                        		<div class="col col-2">
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Asset Management</div>
+		                        					<div class="copy">Check out Google Drive</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Design and Construction</div>
+		                        					<div class="copy">Check out Google Groups</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="http://finance.deltaden.kpd-i.com/">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Finance</div>
+		                        					<div class="copy">Check out Secure Billing</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Revenue and Online Distribution</div>
+		                        					<div class="copy">Check out Delta STEP Program</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Operations Accounting</div>
+		                        					<div class="copy">Check out Environment Management Portal</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">People Resources</div>
+		                        					<div class="copy">Check out Destinations</div>
+		                        				</div>
+		                        			</a>
+		                        			
+		                        			<a class="item" href="#">
+		                        				<div class="image"><img width="22" height="22" alt="" src="/wp-includes/images/nav_app_icon.png"></div>
+		                        				
+		                        				<div class="content">
+		                        					<div class="title">Technology</div>
+		                        					<div class="copy">Check out Employee Discounts</div>
+		                        				</div>
+		                        			</a>
+		                        		</div>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </li>
+
+                        <!--<li><a href="#"><?php echo _e('Hotels','deltafinance');  ?></a></li>-->
+
+                        <li class="hasSub">
+                        	<a href="#" id="mainNav_committees"><?php echo _e('Committees','deltafinance');  ?></a>
+                        	<div class="navMenu column-2 greyBlue" id="navMenu_committees">
+                        		<div class="col col-1">
+                        			<div class="inner">
+	                        			<div class="title">Employee Engagement Committee (EES)</div>
+	                        			
+	                        			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla HetlipndciedsuknTt idcikaemt eu mauris. Mauris vehicula mollis lacus. Phasellus eleifend tincidunt nulla...</p>
+                        			</div>
+                        		</div>
+                        		
+                        		<div class="col col-2">
+                        			<div class="inner">
+	                        			<ul>
+	                        				<li><a href="#">Employee Engagement</a></li>
+	                        				<li><a href="#">Employee Representative</a></li>
+	                        				<li><a href="#">Green Committee</a></li>
+	                        				<li><a href="#">Intranet Steering Committee</a></li>
+	                        				<li><a href="#">Join Health and Safety</a></li>
+	                        				<li><a href="#">Research Ethics</a></li>
+	                        				<li class="more"><a href="#">View All</a></li>
+	                        			</ul>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </li>
+						
+						<li class="separator">&nbsp;</li>
+						
+                        <li class="hasSub">
+                        	<a href="#" id="mainNav_programs"><?php echo _e('Programs and Promotions','deltafinance');  ?></a>
+                        	
+                        	<div class="navMenu column-2 greyBlue" id="navMenu_programs">
+                        		<div class="col col-1">
+                        			<div class="inner">
+	                        			<div class="title">Delta Privilege</div>
+	                        			
+	                        			<p>This Delta Privilege Portal has been created for you! As a Delta Privilege Champion, having the tools you need to do your job to deliver the program consistently and seamlessly is one of the utmost importance.  The various sections, links and forums contained within this portal will
+help you do just that!</p>
+										<p>Visit the Delta Privilege Portal often to check for updates to the site, manual and tools!</p>
+                        			</div>
+                        		</div>
+                        		
+                        		<div class="col col-2">
+                        			<div class="inner">
+	                        			<ul>
+	                        				<li><a href="#">Delta Privilege</a></li>
+	                        				<li><a href="#">Simply Clean</a></li>
+	                        				<li><a href="#">Delta Greens</a></li>
+	                        				<li><a href="#">Delta Meetings</a></li>
+	                        				<li><a href="#">Delta Events</a></li>
+	                        				<li><a href="#">Delta Talents</a></li>
+	                        				<li class="more"><a href="#">View All</a></li>
+	                        			</ul>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </li>
+                    </ul>
+                </nav>

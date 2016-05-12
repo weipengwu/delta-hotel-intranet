@@ -1,0 +1,52 @@
+<section id="left-column">
+
+    <section class="list-panel top-activities">
+        <h3 class="header">Top Activities<a href="#">Customize</a></h3>
+        <ul>
+            <li><a href="#">Submit expenses</a></li>
+            <li><a href="#">Book a Meeting</a></li>
+            <li><a href="#">Helpdesk Ticket</a></li>
+            <li><a href="#">Book Time Off</a></li>
+            <li><a href="#">Write a Post</a></li>
+            <li><a href="#">Submit Suggestion</a></li>
+        </ul>
+    </section>
+
+    <section class="list-panel popular-resources">
+        <h3 class="header">Popular Resources</h3>
+        <ul>
+            <li><a href="#">Delta Privilege</a></li>
+            <li><a href="#">Employee Directory</a></li>
+            <li><a href="#">Job Postings</a></li>
+        </ul>
+    </section>
+
+    <section class="messages">
+        <ul data-orbit data-options="   slide_number:false;
+                                        bullets:false;
+                                        timer_speed:5000;
+                                        resume_on_mouseout:true;">
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/ad1.png" /></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/ad2.png" /></li>
+        </ul>
+        <nav>
+            <a class="prev" href="#">prev</a>
+            <a class="next" href="#">next</a>
+        </nav>
+    </section>
+
+    <section class="messages">
+        <ul data-orbit data-options="   slide_number:false;
+                                        bullets:false;
+                                        timer_speed:5000;
+                                        resume_on_mouseout:true;">
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/ad2.png" /></li>
+            <li><img src="<?php echo get_template_directory_uri(); ?>/images/ad1.png" /></li>
+        </ul>
+        <nav>
+            <a class="prev" href="#">prev</a>
+            <a class="next" href="#">next</a>
+        </nav>
+    </section>
+
+</section>

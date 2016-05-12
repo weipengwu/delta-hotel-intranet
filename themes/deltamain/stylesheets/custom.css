@@ -1,0 +1,53 @@
+.dialog-language{background-color: red;}
+
+.ui-widget-content{background:white; padding:0; border-radius:0 !important; border:none}
+
+.ui-dialog-titlebar{ background:#3f869a; font-size:font-size: 15px; line-height: 31px; padding: 0 14px; font-family: "Open Sans"; color:white; color: white; font-weight: normal; text-Transform: uppercase; border:none; border-radius:0 !important;}
+
+.ui-dialog-titlebar-close{ border:none; background:none; display:none !important}
+
+
+.ui-dialog{-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);
+box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.30);}
+
+
+#dialog{ height:auto !important;  font-family: "Open Sans"; padding:0;}
+
+
+#dialog fieldset{border:none; color:#004684; padding-bottom: 0; margin-bottom: 0;}
+
+#dialog fieldset span{margin-right: 30px;}
+
+#dialog fieldset span.title{margin-right: 80px;}
+
+
+
+.ui-dialog-buttonpane{padding:0; margin:0}
+
+.ui-dialog-buttonset .ui-button-text-only{ background:#3f869a; border:none; font-family: "Open Sans"; color:white; text-trasform:uppercase; border-radius:0 !important}
+.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all {
+background:none;
+border:none;
+}
+.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all li  {
+background:none;
+border:none;
+}
+#page-header #main-nav .navMenu{width: 710px;}
+.form-allowed-tags {
+    display: none;
+}
+.comment-form-comment label{ display:none;}
+
+.mtab-panel{ display:none;  }
+.mtab-panel:first-child{ display:block;}
+.ctab-panel{ display:none;  }
+.ctab-panel:first-child{ display:block;}
+.title {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.inner > p {
+    font-size: 15px;
+}

@@ -1,0 +1,17 @@
+<nav id="profile-nav">
+    <ul>
+        <li><a href="#"><?php echo _e('Employee Network','deltafinance');  ?></a></li>
+        <li class="profile hasSub">
+                        	<a href="#"><?php echo _e('Hello','deltafinance');  ?>, <span class="profile-name"><?= DenUser::field('user_firstname') ?></span></a>
+                        	
+                        	<div id="navMenu_profile" class="navMenu">
+                    			<ul>
+                    				<li><a href="https://deltahotels.okta.com/enduser/settings?fromLogin=true">My Delta Profile</a></li>
+                    				<li id="opener"><a href="#">Intranet Settings</a></li>
+                    				<li><a href="<?php echo home_url();?>/wp-admin">Administration Panel</a></li>
+                    				<!-- <li><a href="#">Log Out</a></li> -->
+                    			</ul>
+                        	</div>
+                        </li>
+    </ul>
+</nav>

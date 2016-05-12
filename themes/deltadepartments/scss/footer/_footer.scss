@@ -1,0 +1,43 @@
+#page-footer {
+  $padding-left: $left-column-width - $left-column-padding;
+  $padding-right: $right-column-width - $right-column-padding;
+
+  background: #dadade url('../images/footer.png') no-repeat 50% 100%;
+  padding: 40px $padding-right 30px $padding-left;
+
+
+  #footer-search {
+    $height: 29px;
+
+    form {
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+    }
+
+    input, button {
+      height: $height;
+      margin: 0;
+      border: 0;
+      outline: 0;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding-right: $height;
+    }
+
+    button {
+      @extend .hide-text;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0;
+      background: url('../images/search.png') no-repeat 50% 50%;
+      width: $height;
+    }
+  }
+
+}

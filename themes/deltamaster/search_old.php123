@@ -1,0 +1,290 @@
+<?php
+/**
+ * The template for displaying Search Results pages
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ * Template Name: Search_old
+ */
+
+include 'partials/html-head.php';
+include 'partials/page-header.php'; 
+?>
+<section id="page-body">
+<section id="full-column">
+	<section id="search_page">
+	
+	<section id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+		<nav id="breadcrumb">
+	<ul class="clearfix">
+	<li><a href="<?php bloginfo('url')?>">&lt; Back to Home</a></li>
+	</ul>
+	</nav>
+	<header id="pageHeader">
+        <h1>Search Results <span>for “health” <?php bloginfo('name');?></span></h1>
+        <p class="match">120 Matches</p>
+	</header>
+	<section class="panel search">
+	<header>
+		
+	<dl class="tabs" data-tab> 
+		<dd class="active"><a href="#panel1">Search results</a></dd> 
+		<dd><a href="#panel2">Files</a></dd> 
+		<dd><a href="#panel3">Events</a></dd> 
+	</dl> 
+	
+	<div class="tabs-content"> 
+	
+		<div class="content active" id="panel1"> 
+		
+		<div class="container clearfix">
+                            <div class="row">
+                                <div class="large-6">
+                                    <div class="title"><a href="#">Keep the conversation rolling on mental health</a></div>
+									
+									<div class="date">Posted Jul 28, 2014, 5:45 AM by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p>Clara’s Big Ride may have reached the finish line, but the conversation on mental health continues. Recently, Delta’s President & CEO Ken Greene and Bill Wilkerson, Chairman of Mental...</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-6">
+                                    <div class="title"><a href="#">Keep the conversation rolling on mental health</a></div>
+                                    
+                                    <div class="date">Posted Jul 28, 2014, 5:45 AM by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+
+                                    <p>Clara’s Big Ride may have reached the finish line, but the conversation on mental health continues. Recently, Delta’s President & CEO Ken Greene and Bill Wilkerson, Chairman of Mental...</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="large-6">
+                                    <div class="title"><a href="#">Keep the conversation rolling on mental health</a></div>
+                                    
+                                    <div class="date">Posted Jul 28, 2014, 5:45 AM by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+
+                                    <p>Clara’s Big Ride may have reached the finish line, but the conversation on mental health continues. Recently, Delta’s President & CEO Ken Greene and Bill Wilkerson, Chairman of Mental...</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--div class="pagination">
+                        	<ul>
+                        		<li><a href="#" class="first">&lt;&lt;</a></li>
+                        		<li><a href="#" class="back">&lt;</a></li>
+                        		
+                        		<li><a href="#">1</a></li>
+                        		<li><a href="#">2</a></li>
+                        		<li><a href="#">3</a></li>
+                        		<li><a href="#">4</a></li>
+                        		<li><a href="#">5</a></li>
+                        		<li><a href="#">6</a></li>
+                        		<li><a href="#">7</a></li>
+                        		<li><a href="#">8</a></li>
+                        		<li><a href="#">9</a></li>
+                        		
+                        		<li><a href="#" class="next">&gt;</a></li>
+                        		<li><a href="#" class="last">&gt;&gt;</a></li>
+                        	</ul>
+                        </div-->
+		
+			
+		</div> 
+		
+		<div class="content" id="panel2"> 
+			<div class="row">
+                                <div class="large-1 columns">
+                                	<img src="<?php bloginfo('template_url');?>/images/fpo/searchFiles.png">
+                                </div>
+                                
+                                <div class="large-6 columns">
+                                    <div class="title"><a href="#">X Mental Health Commissions of CDA.doc</a></div>
+									
+									<div class="date">Posted by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p class="location">Drive Location &gt; Path to file</p>
+                                </div>
+                                
+                                <div class="large-3 columns textRight">
+                                	Sep 27, 2013, 8:44 AM
+                                </div>
+                            </div> 
+<div class="row">
+                                <div class="large-1 columns">
+                                	<img src="<?php bloginfo('template_url');?>/images/fpo/searchFiles.png">
+                                </div>
+                                
+                                <div class="large-6 columns">
+                                    <div class="title"><a href="#">X Mental Health Commissions of CDA.doc</a></div>
+									
+									<div class="date">Posted by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p class="location">Drive Location &gt; Path to file</p>
+                                </div>
+                                
+                                <div class="large-3 columns textRight">
+                                	Sep 27, 2013, 8:44 AM
+                                </div>
+                            </div> 
+<div class="row">
+                                <div class="large-1 columns">
+                                	<img src="<?php bloginfo('template_url');?>/images/fpo/searchFiles.png">
+                                </div>
+                                
+                                <div class="large-6 columns">
+                                    <div class="title"><a href="#">X Mental Health Commissions of CDA.doc</a></div>
+									
+									<div class="date">Posted by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p class="location">Drive Location &gt; Path to file</p>
+                                </div>
+                                
+                                <div class="large-3 columns textRight">
+                                	Sep 27, 2013, 8:44 AM
+                                </div>
+                            </div> 
+<div class="row">
+                                <div class="large-1 columns">
+                                	<img src="<?php bloginfo('template_url');?>/images/fpo/searchFiles.png">
+                                </div>
+                                
+                                <div class="large-6 columns">
+                                    <div class="title"><a href="#">X Mental Health Commissions of CDA.doc</a></div>
+									
+									<div class="date">Posted by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p class="location">Drive Location &gt; Path to file</p>
+                                </div>
+                                
+                                <div class="large-3 columns textRight">
+                                	Sep 27, 2013, 8:44 AM
+                                </div>
+                            </div> 
+<div class="row">
+                                <div class="large-1 columns">
+                                	<img src="<?php bloginfo('template_url');?>/images/fpo/searchFiles.png">
+                                </div>
+                                
+                                <div class="large-6 columns">
+                                    <div class="title"><a href="#">X Mental Health Commissions of CDA.doc</a></div>
+									
+									<div class="date">Posted by <a href="#">Andy Serwatuk</a> in <a href="#">Information Technology</a></div>
+									
+                                    <p class="location">Drive Location &gt; Path to file</p>
+                                </div>
+                                
+                                <div class="large-3 columns textRight">
+                                	Sep 27, 2013, 8:44 AM
+                                </div>
+                            </div> 
+<!--end-->
+		</div> 
+		
+		<div class="content" id="panel3"> 
+<!--starts-->
+			<div class="row">
+                            	<div class="large-9 columns">
+                            		<div class="row">
+		                                <div class="large-2 columns">
+		                                    Tue, Aug 19, 2014
+		                                </div>
+		                                
+		                                <div class="large-2 columns">
+		                                	2:00pm - 3:00pm
+		                                </div>
+		                                
+		                                <div class="large-5 columns">
+		                                	<a href="#">Updated &ndash; Monthly Health &amp; Safety Meeting</a>
+		                                </div>
+		                                
+		                                <div class="large-3 columns">
+		                                	Think Tank (A level)
+		                                </div>
+		                            </div>
+		                            
+		                           <div class="row">
+		                                <div class="large-2 columns">
+		                                    Tue, Aug 19, 2014
+		                                </div>
+		                                
+		                                <div class="large-2 columns">
+		                                	2:00pm - 3:00pm
+		                                </div>
+		                                
+		                                <div class="large-5 columns">
+		                                	<a href="#">Updated &ndash; Monthly Health &amp; Safety Meeting</a>
+		                                </div>
+		                                
+		                                <div class="large-3 columns">
+		                                	Think Tank (A level)
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="row">
+		                                <div class="large-2 columns">
+		                                    Tue, Aug 19, 2014
+		                                </div>
+		                                
+		                                <div class="large-2 columns">
+		                                	2:00pm - 3:00pm
+		                                </div>
+		                                
+		                                <div class="large-5 columns">
+		                                	<a href="#">Updated &ndash; Monthly Health &amp; Safety Meeting</a>
+		                                </div>
+		                                
+		                                <div class="large-3 columns">
+		                                	Think Tank (A level)
+		                                </div>
+		                            </div>
+                            	</div>
+                            
+	                            <div class="large-3 columns">
+	                            	<section class="panel events">
+				                        <h3 class="header">Upcoming Events</h3>
+				
+				                        <div class="body">
+				                            <ul class="eventDate">
+				                                <li>
+				                                	<a href="#"><span class="eventItem">Aug<br>1</span>
+				                                	Delta Employee Picnic</a>
+				                                </li>
+				
+				                                <li>
+				                                	<a href="#"><span class="eventItem">Aug<br>5</span>
+				                                	Opening: Delta Moose Jaw</a>
+				                                </li>
+				
+				                                <li>
+				                                	<a href="#"><span class="eventItem">Aug<br>21</span>
+				                                	Network Maintenance</a>
+				                                </li>
+				
+				                                <li>
+				                                	<a href="#"><span class="eventItem">Aug<br>30</span>
+				                                	Upcoming Event</a>
+				                                </li>
+				                            </ul>
+				                        </div>
+				                    </section>
+	                            </div>
+                            </div>
+
+		<!--ends--> 
+		</div> 
+			
+
+			
+		</div><!-- #content -->
+	</section><!-- #primary -->
+	</section><!-- #search -->
+</section>
+</section>
+<?php
+
+include 'partials/page-footer.php';
+include 'partials/html-foot.php';
+?>
